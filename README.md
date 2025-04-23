@@ -25,6 +25,7 @@ Setup
     bash
 
 git clone https://github.com/yourusername/code-combiner.git
+
 cd code-combiner
 
 Run the script:
