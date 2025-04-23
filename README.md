@@ -74,24 +74,3 @@ If .codeignore doesn’t exist, the script skips:
     .git/, __pycache__/, venv/, node_modules/
 
     *.bin, *.png, *.jpg
-
-Output Format 📄
-Example Output (combined_code.txt)
-text
-
-# Generated: 2024-03-15 14:30  
-# Root Directory: /projects/my_app  
-# Ignored Patterns: ['venv/', '*.log', 'tmp/']  
-
-# FILE: src/main.py  
-def hello():  
-    print("Hello!")  
-
-# FILE: config.json  
-{ "debug": true }  
-
-Troubleshooting 🔧
-Issue	Solution
-Permission errors	The script skips unreadable files (logs a warning).
-Binary files included?	The script auto-detects and skips binary files.
-Wrong files processed?	Check .codeignore or modify default ignores in the script.
