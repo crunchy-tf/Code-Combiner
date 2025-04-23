@@ -3,11 +3,17 @@
 Features ✨
 
 ✅ Recursive directory scanning – Processes all files in a directory and its subdirectories.
+
 ✅ Ignore file support – Uses .codeignore (like .gitignore) to exclude files/directories.
+
 ✅ Binary file detection – Automatically skips non-text files (images, executables, etc.).
+
 ✅ Formatted output – Clearly marks each file’s path and content for easy parsing.
+
 ✅ Error handling – Skips unreadable files and logs warnings.
+
 ✅ Metadata header – Includes timestamps, root directory, and ignored patterns.
+
 Installation ⚙️
 Prerequisites
 
