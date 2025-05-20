@@ -1,6 +1,3 @@
-Okay, here's a friendly and slightly more detailed README, formatted perfectly for GitHub, complete with emojis! 🌟
-Code Combiner Script 🧑‍💻✨
-
 Ever wish you could have all your project's code neatly bundled into one single file? This script does just that! It's super handy for quick reviews, AI prompts, or just getting an overview of your codebase without jumping through a million files.
 What it Does 🧐
 
