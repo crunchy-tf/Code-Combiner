@@ -164,18 +164,18 @@ def main():
         f"# Effective Ignored Patterns (includes always-ignored '.git/'): {sorted(list(final_effective_ignore_patterns))}\n"
     ]
 
-    # --- Write output file (in script's directory) ---
-    scanned_dir_basename = os.path.basename(os.path.normpath(root_dir_to_scan))
-    timestamp_str = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
-    output_filename = f"combined_code_{scanned_dir_basename}_{timestamp_str}.txt"
+    # --- Write output file (in script's directory, fixed filename) ---
+    # CHANGED: Fixed output filename to 'combined_code.txt'
+    output_filename = 'combined_code.txt'
     output_file_path = os.path.join(script_dir, output_filename)
 
     try:
+        # 'w' mode will overwrite the file if it exists
         with open(output_file_path, 'w', encoding='utf-8') as f_out:
             f_out.write('\n'.join(header_lines))
             f_out.write('\n'.join(output_content_parts)) # Join all collected file contents
         print(f"\nSuccessfully processed {processed_file_count} files.")
-        print(f"Output written to: {output_file_path}")
+        print(f"Output written to: {output_file_path} (overwritten if existed).") # Clarify overwrite
     except Exception as e:
         print(f"Error: Failed to write output file '{output_file_path}': {e}")
         return
